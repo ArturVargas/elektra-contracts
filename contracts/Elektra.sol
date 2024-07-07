@@ -12,9 +12,9 @@ import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract Elektra {
 
-    address constant aavePoolProxy = 0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8;
-    address constant collateralToken = 0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded; //eth ftm
-    address constant debtToken = 0xb9fdF942fd49A3876b4c5aAd3b65B48C8c7Bec2C; //usdc ftm
+    address constant aavePoolProxy = 0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951;
+    address constant collateralToken = 0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c; //eth ftm
+    address constant debtToken = 0x42A218F7bd03c63c4835496506492A383EfcF726; //usdc ftm
 
     mapping(address => uint256) collateralValue;
     mapping(address => uint256) totalDebt;

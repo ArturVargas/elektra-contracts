@@ -4,6 +4,7 @@ const { vars } = require("hardhat/config");
 const INFURA_API_KEY = vars.get("INFURA_API_KEY");
 const SEPOLIA_PRIVATE_KEY = vars.get("SEPOLIA_PRIVATE_KEY");
 const BLAST_API_KEY = vars.get("BLAST_API_KEY");
+const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -22,9 +23,9 @@ module.exports = {
       accounts: [SEPOLIA_PRIVATE_KEY],
     },
   },
-  // etherscan: {
-  //   apiKey: ETHERSCAN_API_KEY,
-  // },
+  etherscan: {
+    apiKey: ETHERSCAN_API_KEY,
+  },
   ignition: {
     requiredConfirmations: 1
   },
