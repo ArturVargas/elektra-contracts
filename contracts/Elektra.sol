@@ -85,4 +85,12 @@ contract Elektra {
         IPool(aavePoolProxy).repay(debtToken, _amount, 2, address(this));
     }
 
+    function seeCollateralValue(address _sender) public view returns (uint256) {
+        return collateralValue[_sender];
+    }
+
+    function seeTotalDebtGet(address _sender) public view returns (uint256) {
+        return totalDebt[_sender];
+    }
+
 }
